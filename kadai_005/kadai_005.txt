@@ -1,13 +1,9 @@
-C:\Users\2025002469\Documents\test\git_challenge> Set-Content hello_world.txt "Hello, world!"
-PS C:\Users\2025002469\Documents\test\git_challenge> Add-Content hello_world.txt "こんにちは、世界！"
-PS C:\Users\2025002469\Documents\test\git_challenge> git add hello_world.txt
->> git commit -m "hello_would.txt を追加"
-On branch main
-nothing to commit, working tree clean
-PS C:\Users\2025002469\Documents\test\git_challenge> git add hello_world.txt
->> git commit -m "日本語訳を追記"
-On branch main
-nothing to commit, working tree clean
-PS C:\Users\2025002469\Documents\test\git_challenge> git log --oneline
-bbca331 (HEAD -> main) Add こんにちは、世界！
-f9da581 add hello_world
+mkdir git_challenge
+cd git_challenge
+git init
+New-Item hello_world.txt -ItemType File
+git add hello_world.txt
+git commit -m "hello_world.txt を追加"
+git add hello_world.txt
+git commit -m "日本語訳を追記"
+git log --oneline
